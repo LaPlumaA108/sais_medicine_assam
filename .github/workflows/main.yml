@@ -25,8 +25,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.ALIYUN_REGISTRY }}/assam/sais_medicine:latest .
+          docker build -t ${{ secrets.ALIYUN_REGISTRY }}/assam/sais_medicine:test .
 
       - name: Push Docker image
         run: |
-          docker push ${{ secrets.ALIYUN_REGISTRY }}/assam/sais_medicine:latest
+          docker push ${{ secrets.ALIYUN_REGISTRY }}/assam/sais_medicine:test
